@@ -1,14 +1,12 @@
 /*
-• Cree un algoritmo que visualice los
-números que son múltiplos de 2 o
-de 3 que hay entre 1 y 100
-
-• Tener en cuenta que hay números
-que son múltiplos de 2 y de 3 al
-mismo tiempo
-
-• En dichos casos, solamente
-indique el número una vez]*/
+- Cree un método esMultiplo con 2 parámetros que devuelva el valor
+lógico verdadero o falso según si el primer número que
+se indique como parámetro es múltiplo del segundo 
+- Recuerde que un numero es múltiplo de otro si al
+dividirlo su resto es cero
+- Recuerde que la operación mod permite saber
+si el resto de una división es cero
+*/
 
 let date1 = document.getElementById("date1");
 let date2 = document.getElementById("date2");
@@ -21,6 +19,7 @@ btnSend?.addEventListener("click", () => {
   function esMultiplo(numero1: number, numero2: number): boolean {
     return numero1 % numero2 === 0;
   }
+
   if (esMultiplo(numero1, numero2)) {
     console.log(numero1 + " es multiplo de " + numero2);
   } else {
